@@ -1,0 +1,885 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  /* cela empeche les box de grandir avec les padding */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+    
+body {
+    font-family: 'Varela Round', sans-serif;
+    background: black;
+    color: #DDC2BD;
+
+}
+
+img {
+    display:block;
+    max-width: 100%;
+}
+
+ .flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center ; 
+   
+} 
+
+.column {
+    flex-direction: column;
+}
+
+
+
+/* SECTION 1 */
+
+header {
+    width: min(1198px, 95%);         
+    padding-top:50px;
+    justify-content: flex-end !important; 
+}
+
+nav {
+    /* border: 1px solid green; */
+    gap: 30px;
+    background: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: #DDC2BD;
+    font-size: 20px;
+}
+
+.burger {
+    display: none;
+}
+
+/* SECTION INTRO */
+
+.IntroContainer  article {
+    /* border: 1px solid blue; */
+    align-self: flex-start;
+    transform: translate(80px);
+    /* position :relative;
+    left: 77px; */
+    /* margin-left: 100px; */
+} 
+
+h1 {
+    font-size: clamp(60px, 5vw, 96px);   
+    /* border : 1px green solid ; */
+}
+
+h2 {
+    font-size: clamp(38px, 5vw, 64px);
+}
+
+.IntroContainer {
+    height: 859px;
+}
+
+.IntroContainer img {
+    align-self: flex-end;   
+    
+}
+
+/* SECTION ETAT */
+
+.Etat h3 {
+    font-size: clamp(38px, 5vw, 64px) !important;
+    color:#DDC2BD;
+    position:relative;
+    left:100px;
+}
+
+.Etat {
+    margin-top: 110px;
+    gap: 40px;
+}
+
+.Etat article {
+    font-size: 25px;
+    color: #DDC2BD;
+}
+
+.Etat article span {
+    font-size: 30px;
+    color: #E7805A;
+}
+
+.Etat p {
+    margin: 1em;
+}
+
+/* SECTION PREMIERS PERSONNAGES */
+ 
+#PremierPerso {
+    margin-top: 100px;
+}
+
+#PremierPerso h3 {
+    font-size: clamp(38px, 5vw, 64px) !important;
+    color:#DDC2BD;
+    margin-left: 100px;
+}
+.patchwork {
+    margin-top: 50px;
+}
+.patchwork .image1 {
+    margin-left: 100px;
+    align-self: flex-start;
+}
+
+.textePremierPerso {
+    /* width: min(699px, 100%); */
+    height: min(506px, 100%);
+    background: #FFA44D;
+    /* align-content: flex-end; */
+    color:black;
+}
+
+.textePremierPerso p {
+    margin:2em;
+}
+
+.p1 {
+    padding-top: 20px;
+}
+
+.p1, .p2 {
+    padding-left: 60px;
+}
+
+.p3 {
+    padding-left: 141px;
+}
+
+.imagesRelatives {
+    justify-content: flex-start ;
+    margin-left: 5%;
+}
+
+.imagesRelatives .image2 {
+    position : relative;
+    bottom:245px;
+}
+
+.imagesRelatives .image3  {
+    position : relative;
+    bottom: 180px;
+}
+
+/* SECTION CARTES */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 500px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: ;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: black;
+    color: rgb(161, 146, 146);
+    transform: rotateY(180deg);
+  }
+
+   /* 2eme CARTE */
+
+  .flip-card2 {
+    background-color: transparent;
+    width: 450px;
+    height: 400px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card2:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front2, .flip-card-back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front2 {
+    background-color: ;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back2 {
+    background-color: black;
+    color: rgb(161, 146, 146);
+    transform: rotateY(180deg);
+  }
+
+  /* 3eme CARTE */
+
+  .flip-card3 {
+    background-color: transparent;
+    width: 400px;
+    height: 500px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card3:hover .flip-card-inner3 {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front3, .flip-card-back3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front3 {
+    background-color: ;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back3 {
+    background-color: black;
+    color: rgb(161, 146, 146);
+    transform: rotateY(180deg);
+  }
+  
+  /* 4eme CARTE */
+
+  .flip-card4 {
+    background-color: transparent;
+    width: 300px;
+    height: 500px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card4:hover .flip-card-inner4 {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front4, .flip-card-back4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front4 {
+    background-color: ;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back4 {
+    background-color: black;
+    color: rgb(161, 146, 146);
+    transform: rotateY(180deg);
+  }
+
+
+/* SECTION CLICHES  */
+
+
+
+.cliches h3 {
+    font-size: clamp(38px, 5vw, 64px);
+    color: black;
+    margin-left: 7%;
+    /* border : green solid 1px; */
+    
+}
+
+.clichés {
+    margin-top: 50px;
+    color: black;
+   
+}
+
+.clichés img {
+    align-self: start;
+}
+
+/* .cliches article {
+    border: blueviolet 1px solid ;
+
+} */
+
+.cliches {
+    background: #FFA44D;
+    font-size: 20px;
+    padding: 30px 0px 30px;
+}
+
+.cliches a {
+        text-decoration: none;
+        color: #821B2F;
+        font-size: 25px;
+}
+
+.cliches a:hover {
+    color: black;
+}
+
+.cliches p {
+    margin:1em;
+    
+}
+
+.Anita {
+    gap: 140px;
+}
+
+.Anita article {
+    max-width: 630px;
+    min-height: (390px, 100%);
+}
+
+.Anita img {
+    margin-top: 2%;
+}
+
+/* SECTION  VIDEO */
+
+.videos {
+    background-color: #E5E5E5;
+    height: min(335px, 100%);
+    align-items: center;
+    padding: 40px 0px 40px;
+}
+
+.video {
+    gap:80px;
+}
+
+/* SECTION INSPIRATION */
+
+.TitreInspiration h3 {
+    font-size: clamp(38px, 5vw, 64px);
+    color:#DDC2BD;
+}
+
+.TitreInspiration {
+    justify-content: flex-end !important;
+    gap:120px;
+}
+
+.PersoAnita {
+    /* border: green 1px solid; */
+    min-height: (582px, 100%);
+    margin-top: 74px;
+    justify-content: center;
+    gap: 62px;
+} 
+
+.PersoAnita article {
+    font-size: 25px;
+    width: 730px;
+    height: 582px;
+}
+
+/* SECTION EVOLUTION NOTABLE */
+
+.Evolution {
+    margin-top: 143px;
+    justify-content: flex-end;
+    /* border: green solid 2px; */
+    }
+
+
+.Combat {
+    gap: 45px;
+    /* border: blue solid 2px; */
+    transform:translate(-80px) ;
+    
+}
+
+.Combat article {
+    font-size: 18px;
+}
+
+.Combat img {
+    max-width: none;
+}
+
+.Evol {
+    transform:translate(115px,-90px);
+ } 
+
+.Evol h3 {
+    font-size: clamp(38px, 5vw, 60px);
+    color:#DDC2BD;
+} 
+
+
+
+/* SECTION CAROUSEL */
+
+@keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn {
+    position: relative;
+    width:300vw;
+    height: 100px;
+    margin-bottom: 150px;
+  }
+  
+  .pic-ctn > img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  img:nth-child(4) {
+    animation-delay: 6s;
+  }
+  img:nth-child(5) {
+    animation-delay: 8s;
+  }
+
+.Carousel {
+    justify-content: flex-start;
+    align-items: none;
+    margin-top: 5%;
+    background: #FFA44D;
+    padding-top: 40px ;
+    padding-bottom: 40px;
+}
+
+.orange article {
+    padding: 0px 40px 0px ;
+}
+
+.orange {
+    
+    font-size: 18px;
+    color:black;
+}
+
+.orange p {
+    margin: 1em;
+    font-size: 20px;
+}
+
+.carousel {
+    color: black;
+}
+
+.carousel article {
+margin-left:60px; 
+}
+
+.carousel span {
+    font-size: 18px;
+    color:#821B2F
+}
+
+.Divers h3 {
+    font-size: clamp(38px, 5vw, 64px);
+    color:#DDC2BD;
+}
+
+.Divers  {
+    justify-content: flex-end;
+    gap:120px;
+}
+
+.conclusion {
+font-size:18px;
+padding: 60px;
+}
+
+.conclusion p {
+    margin: 1em;
+    font-size: 20px;
+}
+
+.conclusion a {
+    text-decoration: none;
+    color: #E7805A;
+    font-size: 25px;
+}
+
+.conclusion a:hover {
+color: #756E95;
+}
+
+.gif {
+    justify-content:center;
+    gap:50px;
+}
+
+.gif2 {
+gap: 10px;
+}
+
+.gif .visage {
+    position : relative;
+    left: 130px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:1260px) {
+
+    header {
+        position:fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    /* nav {
+        border: none;
+        gap: 30px;
+    } */
+    
+    nav a {
+        text-decoration: none;
+        color: #DDC2BD;
+        font-size: 20px;
+    }
+    
+    .burger {
+        display: block;
+        cursor:pointer;
+        z-index: 1;
+    
+    }
+    
+    /* SECTION INTRO */
+h1 {
+    margin-top:100px;
+}
+    
+    .IntroContainer {
+        flex-wrap: wrap;
+
+    }
+    .IntroContainer  article {
+        align-self: flex-start;
+        /* transform: none; */
+        
+     
+    } 
+    
+    nav {
+        background: black;
+        position:fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background:black;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+    
+
+    }
+
+    .menu-open {
+        transform: translateX(0);
+    }
+
+    .burger span {
+    width: 40px;
+    height: 5px;
+    background: #DDC2BD;
+    border-radius: 54px;
+    margin: 6px 0;
+    display:block;
+    }
+
+    .Etat {
+        margin-top: 80px;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+
+    .Etat article {
+        font-size: 25px;
+        color: #DDC2BD;
+        
+    }
+
+    .Etat h3 {
+        left: 50px;
+    }
+
+    .patchwork {
+        flex-wrap: wrap;
+    }
+
+    .patchwork .image1 {
+        margin-left: 0px;
+        padding-bottom: 30px;
+    }
+
+    .p1, .p2, .p3 {
+        padding-left: 0px;
+    }
+
+    .imagesRelatives {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px ;
+        margin-top: 20px;
+        margin-left: 0%;
+    }
+    .imagesRelatives .image2 {
+        position : static;
+    }
+    
+    .imagesRelatives .image3  {
+        position : static;
+    }
+
+
+    /* VIDEOS */
+.video {
+    flex-wrap: wrap;
+}
+
+.Evolution {
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+.Evol {
+    transform:translate(-80px, 160px);
+ } 
+
+ .Combat {
+    transform:none;
+    margin-bottom: 20px;
+    padding:0px 20px 20px;
+ }
+
+ .Combat img {
+     width:70%
+ }
+.PersoAnita {
+flex-wrap: wrap;
+gap: 0px
+}
+.pic-ctn{
+display:none;
+}
+
+.carousel article {
+    margin-right:50px; 
+    }
+
+}
+
+@media (max-width:1108px) {
+
+.TitreInspiration  h3{
+
+margin : 40px 30px 0px 0px;
+}
+    
+.TitreInspiration img {
+    display:none;
+}
+
+}
+
+@media (max-width:990px) {
+
+    .Anita {
+        flex-wrap: wrap;
+        gap:0px;
+    }
+
+    
+    .Anita img {
+        margin-top: 0%;
+        padding: 20px 0px 20px;
+    }
+
+    .gif2 img {
+       display:none;
+    }
+
+    .cartes {
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .PersoAnita article {
+        font-size: 18px;
+        margin:4em;
+        width: 331px;
+        height: 440px;
+    }
+}
+
+
+    /* .grille2 {
+        display:none;
+    } */
+@media (max-width:670px) {
+    .grille2 {
+    display:none;
+}
+
+
+}
+
+@media (max-width:540px) {
+.Etat img {
+    width:50%;
+    margin-right: 100px;
+}
+
+.Etat h3 {
+    position:relative;
+    left:100px;
+}
+
+.Etat article {
+    font-size: 18px;
+    padding: 0px 20px 0px;
+}
+
+.Etat article span {
+    font-size: 25px;
+    color: #E7805A;
+}
+
+#PremierPerso h3 {
+    margin-left: 50px;
+}
+/* .Etat h3 {
+position:relative;
+left:150px; */
+
+}
+
+
+
+
