@@ -678,7 +678,7 @@ h1 {
     }
     .IntroContainer  article {
         align-self: flex-start;
-        /* transform: none; */
+        transform: none;
         
      
     } 
